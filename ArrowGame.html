@@ -1,0 +1,19 @@
+<template name = "arrowgame">
+	<div class = "container" style = "margin:auto;">
+		<div  id = "paper" style = "width:640px;height:480px;border: 5px solid darkgrey; margin:auto;"></div>
+		
+		<div id = "menu" style = "display:flex; ">		
+		<h1 align = "left" style = "width:300px;">Shooting Game</h1>
+			<div id = "buttons">
+				<button id = "startgame"><h4 onclick = "circles()">Start Game</h4></button>
+				<!--stop doesn't reset. It just quits the calls to the circles() and circles2()-->
+				<button id = "stopgame"><h4 onclick = "stop()">Stop</h4></button>
+				<button id = "resumegame"><h4 onclick = "resume()">Resume</h4></button>
+				<a href = "{{pathFor route='video2'}}"><button id = "next">Next</button></a>
+			</div>
+			<div class = "arrowgame" style = "width:100px;"></div>
+			<div name = "filler" style = "flex:1"></div>
+		</div>
+	</div>
+</template>
+		

@@ -1,0 +1,31 @@
+<template name = "gamemenu">
+	  <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        {{>colors}}
+        <br>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Arrow Game</h2>
+          <a href = "{{pathFor route = 'arrow'}}"><img src = "ArrowGame.JPG"/></a>
+        </div>
+        <div class="col-lg-4">
+          <h2>Maze Game</h2>
+          <a href = "{{pathFor route = 'mazegame'}}" ><img src = "maze1.png"/></a>
+       </div>
+        <div class="col-lg-4">
+          <h2>Other Game</h2>
+          <a href = "{{pathFor route = 'mazegame'}}" ><img src = "colors.gif"/></a>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+
+    </div>
+	 </template>

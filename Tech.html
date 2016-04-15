@@ -1,0 +1,174 @@
+<template name = "tech">
+	<div class = "container">
+	 <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">HTML Canvas</h2>
+          
+        </div>
+        <div class="col-md-5">
+        	<canvas id = "myCanvas" width = "500px" height = "500px" style = "border: 5px solid grey;"></canvas>
+
+          {{init}}
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">HTML Video</h2>
+          <p class="lead">Located on our Videos page</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">CSS</h2>
+          <p class="lead">Styling in Bootstrap</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Javascript</h2>
+          <p class="lead">Built apps, handled events, framework for Meteor.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">jQuery</h2>
+          <p class="lead">Used for appending in the arrow game, disabled buttons on the color game.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">SVG</h2>
+          <p class="lead">Created all games with SVG Elements.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PHP</h2>
+          <p class="lead">Not used, but example shown.</p>
+          	
+        </div>
+        <div class="col-md-5">
+        	<div style = "text-align:left">
+        	<p>
+        	<h4>Javascript</h4>
+          	
+          		<pre>
+'click .php': function() {
+	var date = new Date();
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+}
+};
+xhttp.open("GET", "php05.php?d = "+date, true);
+xhttp.send();
+}
+			
+          	</pre>
+          	<h4>PHP</h4>
+          	<pre>
+php
+echo $_REQUEST["d"]," is the date right now";
+?</pre></p>
+		</div>
+        	
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">AJAX</h2>
+          <p class="lead">Node.js used instead.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+        	<div><h2>Let AJAX change this picture</h2></div>
+
+			<button type="button">Change Content</button>
+			<div id = "demo">
+          <img class="featurette-image img-responsive center-block" src="AFC_Ajax.png" alt="Generic placeholder image" style = "
+          width:200px;height:200px;">
+      </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">JSON</h2>
+          <p class="lead">Format for the MongoDB collection.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Data Store</h2>
+          <p class="lead">MongoDB Collection. conditional statements in arrow game. Use with the Table.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Web Server</h2>
+          <p class="lead">Meteor/Xampp</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+    </div>
+
+</template>

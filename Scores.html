@@ -1,0 +1,38 @@
+<template name = "scores">
+	<div class = "container" >
+
+		<h1>Here are the scores</h1>
+		{{#if currentUser}}
+	{{>reactiveTable collection = mycollfunc settings = settings}}
+		<table class="table table-striped">
+		    <thead >
+		      <tr>
+		        <th class = "fa fa-bell"> Username</th>
+		        <th class = "fa fa-picture-o"> Color Game Levels</th>
+		        <th class = "fa fa-clock-o"> Time</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      {{#each mycollfunc}}
+		      	{{>user}}
+		      {{/each}}
+		    </tbody>
+  		</table>
+  	
+		{{else}}
+		<h3>Sorry please sign in</h3>
+		{{/if}}
+
+		<a href = "{{pathFor route='home'}}"><button id = "next">Go Home</button></a>
+		<!--<button class = "deleteme">Clear</button>-->
+	</div>
+</template>
+
+<template name = "user">
+<tr>
+	<td>{{getname}}</td>
+	<td>{{colorResult}}</td>
+	<td>{{createdAt}}</td>
+</tr>
+
+</template>

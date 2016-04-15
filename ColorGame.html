@@ -1,0 +1,50 @@
+
+<template name = "colors">
+		
+	<div class = "wrap">
+		<h1>Color Game Memory</h1>
+		<div id="ColorBox" style = "width:500px; height:200px; margin:auto; border: 5px solid darkgrey;">
+		</div>
+		<div class = "result">
+			{{>click}}
+		</div>
+		<div id="buttons">
+			<button class = "check" id = "this">Check</button>
+			<button class = "level1">Level 1</button>
+			<button class = "level2">Level 2</button>
+			<button class = "level3">Level 3</button>
+			<button class = "again">Play Again</button>
+
+			<!--
+			<button class = "checkme">Checkme</button>
+				<input type = "submit" id = "check" value = "check"/>
+				<input type = "submit" id = "check2" value = "check2"/>
+			
+
+			<form action = "#" onsubmit = "start(3,1000);">
+				<input type = "submit" id = "level1" value = "Level 1"/>
+			</form>
+			
+			<form action = "#" onsubmit = "start(5,800);">
+				<input type = "submit" id = "level2" value = "Level 2"/>
+			</form>
+			
+			<form action = "#" onsubmit = "start(10,300);">
+				<input type = "submit" id = "level3" value = "Level 3"/>
+			</form>
+		-->
+		</div>
+	
+		
+	</div>
+
+
+</template>
+
+
+<template name="click">
+		 <!--{{#each mycoll}}
+		 {{text}}
+		 {{/each}}-->
+		 {{getsesh}}
+</template>

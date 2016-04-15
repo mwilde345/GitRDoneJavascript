@@ -1,0 +1,26 @@
+<template name = "startgame">
+	<div class = "container" style = "width:500px;height:200px;margin:auto;">
+		{{>colors}}
+		<a href = "{{pathFor route='video1'}}"><button id = "next">Next</button></a>
+	</div>
+</template>
+<template name = "video1">
+	<div class = "container" style = "width:560px;height:315px;margin:auto;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/7waDN0ukFxw" frameborder="0" allowfullscreen></iframe>
+		<a href = "{{pathFor route='arrow'}}"><button id = "next">Next</button></a>
+	</div>	
+</template>
+<template name = "video2">
+	<div class = "container" style = "width:560px;height:315px;margin:auto;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/apbSsILLh28" frameborder="0" allowfullscreen></iframe>
+		<a href = "{{pathFor route='mazegame'}}"><button id = "next">Next</button></a>
+</div>	
+	
+</template>
+<template name = "video3">
+	<div class = "container" style = "width:560px;height:315px;margin:auto;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qOEB1Fr0_MM" frameborder="0" allowfullscreen></iframe>
+		<a href = "{{pathFor route='scores'}}"><button id = "next">View Scores</button></a>
+</div>	
+	
+</template>
